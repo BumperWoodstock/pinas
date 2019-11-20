@@ -1,0 +1,30 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get clean
+
+sudo apt-get install ntfs-3g --only if necessary
+
+sudo nano /etc/fstab
+
+sudo nano /etc/hosts
+
+sudo raspi-config #ssh & name & camera
+
+sudo apt-get install samba samba-common-bin
+
+sudo nano /etc/samba/smb.conf
+  [PiNAS] 
+  comment = Pi Server
+  public = yes
+  writeable = yes
+  browsable = yes 
+  path = /mnt/PiNAS
+  create mask = 0777
+  directory mask = 0777
+  
+ sudo service smbd restart
+ 
+ sudo apt install git
+ 
+
+ 
